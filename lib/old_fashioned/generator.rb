@@ -1,6 +1,6 @@
 require 'fileutils'
 
-module OldFashion
+module OldFashioned
   class Generator
 
     BASE_DIR = "old_fashioned"

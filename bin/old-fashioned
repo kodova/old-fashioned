@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require "old_fashioned"
+
+OldFashioned::Generator.new(ARGV).run

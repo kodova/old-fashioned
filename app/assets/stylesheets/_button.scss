@@ -1,0 +1,61 @@
+@import "../bourbon/bourbon";
+@import "settings";
+
+
+@mixin button-default($style : $default-button-style){
+  @include button($style, lighten($white, 7%));
+}
+
+@mixin button-info($style : $default-button-style){
+  @include button($style, lighten($blue, 7%));
+}
+
+@mixin button-primary($style : $default-button-style){
+  @include button($style, lighten($blue-dark, 7%));
+}
+
+@mixin button-success($style : $default-button-style){
+  @include button($style, lighten($green, 7%));
+}
+
+@mixin button-warn($style : $default-button-style){
+  @include button($style, lighten($yellow, 7%));
+}
+
+@mixin button-danger($style : $default-button-style){
+  @include button($style, lighten($red, 7%));
+}
+
+@mixin button-inverse($style : $default-button-style){
+  @include button($style, lighten($gray-dark, 7%));
+}
+
+@mixin buttons-all(){
+  &.button-info{
+    @include button-info;
+  }
+
+  &.button-warn{
+    @include button-warn;
+  }
+
+  &.button-default{
+    @include button-default;
+  }
+
+  &.button-primary{
+    @include button-primary;
+  }
+
+  &.button-danger{
+    @include button-danger;
+  }
+
+  &.button-inverse{
+    @include button-inverse;
+  }
+
+  &.button-success{
+    @include button-success;
+  }
+}

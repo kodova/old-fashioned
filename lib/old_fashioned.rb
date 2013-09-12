@@ -1,0 +1,2 @@
+module OldFashioned
+end

@@ -1,0 +1,31 @@
+@import "../../../bourbon/bourbon";
+@import "../../../neat/neat";
+
+@import "../../colors";
+
+//$navbar-background: $red;
+//$navbar-highlight-color: darken($red, 8%);
+//$navbar-link-color: $white;
+
+@import "../../prelim";
+
+.container{
+  padding-top: 50px;
+  @include outer-container;
+}
+
+.navbar{
+  @include navbar;
+}
+
+.navbar-borderless{
+  @include navbar(false);
+}
+
+nav.rounded{
+  border-radius: 5px;
+}
+
+nav.gradient{
+  @include background-image(linear-gradient($navbar-highlight-color, $navbar-background));
+}

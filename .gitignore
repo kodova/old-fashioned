@@ -3,3 +3,4 @@ log/*.log
 pkg/
 test/dummy/*
 old_fashioned*.gem
+.DS_Store
